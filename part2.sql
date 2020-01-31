@@ -14,3 +14,5 @@ Select * FROM products WHERE buyprice > 500;
 Select SUM(amount) FROM payments
 Select COUNT(*) FROM orders WHERE status = 'Shipped'
 Select AVG(buyprice/12) AS  Average_Dollars, AVG(buyprice) AS  Average_Rand FROM products
+Select * FROM customers INNER JOIN payments ON payments.customerid = customers.customerid;
+Select * FROM products WHERE description = 'Turnable front wheels, steering function'
